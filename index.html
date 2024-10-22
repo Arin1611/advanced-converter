@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Purpose Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Multi-Purpose Converter</h1>
+</header>
+
+<main>
+    <div class="nav-tabs">
+        <button id="currency-btn" class="tablink">Currency Converter</button>
+        <button id="temp-btn" class="tablink">Temperature Converter</button>
+        <button id="distance-btn" class="tablink">Distance Converter</button>
+        <button id="weight-btn" class="tablink">Weight Converter</button>
+        <button id="bmi-btn" class="tablink">BMI Calculator</button>
+    </div>
+
+    <!-- Currency Converter Section -->
+    <section id="currency-section" class="converter-section">
+        <h2>Currency Converter</h2>
+        <label for="amount">Amount in INR:</label>
+        <input type="number" id="amount" placeholder="Enter amount in INR">
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+        </select>
+        <button id="convert-currency-btn">Convert</button>
+        <p id="currency-result"></p>
+    </section>
+
+    <!-- Temperature Converter Section -->
+    <section id="temp-section" class="converter-section">
+        <h2>Temperature Converter</h2>
+        <label for="temp">Temperature in Fahrenheit:</label>
+        <input type="number" id="temp" placeholder="Enter temperature in Fahrenheit">
+        <button id="convert-temp-btn">Convert</button>
+        <p id="temp-result"></p>
+    </section>
+
+    <!-- Distance Converter Section -->
+    <section id="distance-section" class="converter-section">
+        <h2>Distance Converter</h2>
+        <label for="distance">Distance in Kilometers:</label>
+        <input type="number" id="distance" placeholder="Enter distance in Kilometers">
+        <button id="convert-distance-btn">Convert</button>
+        <p id="distance-result"></p>
+    </section>
+
+    <!-- Weight Converter Section -->
+    <section id="weight-section" class="converter-section">
+        <h2>Weight Converter</h2>
+        <label for="weight">Weight in Kilograms:</label>
+        <input type="number" id="weight" placeholder="Enter weight in Kilograms">
+        <button id="convert-weight-btn">Convert</button>
+        <p id="weight-result"></p>
+    </section>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi-section" class="converter-section">
+        <h2>BMI Calculator</h2>
+        <label for="weight-bmi">Weight in Kilograms:</label>
+        <input type="number" id="weight-bmi" placeholder="Enter weight in Kilograms">
+        <label for="height-bmi">Height in Meters:</label>
+        <input type="number" id="height-bmi" placeholder="Enter height in Meters">
+        <button id="calculate-bmi-btn">Calculate BMI</button>
+        <p id="bmi-result"></p>
+    </section>
+</main>
+
+<footer>
+    <p>By Arin & Shreya</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
